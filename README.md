@@ -1,186 +1,45 @@
-# Employee Task Manager REST API
+# Employee Task Manager
 
-A secure and production-ready Task Management REST API built using Spring Boot.
+A full-stack Employee Task Manager built using Spring Boot, JWT Authentication, MySQL, and React.
 
 ## Features
 
-- User Registration & Login
-- JWT Authentication
-- Role-Based Authorization (USER / ADMIN)
-- CRUD Operations for Tasks
-- Pagination & Sorting
-- DTO Pattern
-- Global Exception Handling
-- Bean Validation
-- Swagger/OpenAPI Documentation
-- Spring Boot Actuator
-- Unit Testing with JUnit & Mockito
-- MySQL Database Integration
-
----
+* JWT Authentication
+* Role-Based Authorization (Admin/User)
+* Task CRUD Operations
+* Pagination
+* Search Tasks
+* Validation
+* Global Exception Handling
+* Swagger API Documentation
+* Spring Boot Actuator
+* Logging
 
 ## Tech Stack
 
-- Java 25
-- Spring Boot 3
-- Spring Security
-- Spring Data JPA
-- JWT (JSON Web Token)
-- Hibernate
-- MySQL
-- Maven
-- Swagger/OpenAPI
-- JUnit 5
-- Mockito
+### Backend
 
----
+* Java 25
+* Spring Boot
+* Spring Security
+* Spring Data JPA
+* MySQL
+* JWT
+* Maven
 
-## Project Structure
+### Frontend (Coming Soon)
 
-```
-src
- ├── config
- ├── controller
- ├── dto
- ├── entity
- ├── enums
- ├── exception
- ├── mapper
- ├── repository
- ├── security
- ├── service
-```
-
----
-
-## Authentication
-
-The API uses JWT Authentication.
-
-### Register
-
-POST
-
-```
-/auth/register
-```
-
-### Login
-
-POST
-
-```
-/auth/login
-```
-
-Returns
-
-```
-JWT Token
-```
-
-Use the token in Swagger:
-
-```
-Authorize
-
-Bearer <your_token>
-```
-
----
-
-## Task APIs
-
-- Create Task
-- Update Task
-- Delete Task
-- Get Task By ID
-- Get All Tasks
-- Pagination
-- Sorting
-
----
-
-## Admin APIs
-
-```
-GET /admin/dashboard
-```
-
-Accessible only by ADMIN users.
-
----
+* React
+* Vite
+* Tailwind CSS
+* Axios
 
 ## API Documentation
 
 Swagger UI
 
-```
 http://localhost:8080/swagger-ui/index.html
-```
-
----
-
-## Monitoring
-
-Spring Boot Actuator
-
-```
-http://localhost:8080/actuator
-```
-
-Health Endpoint
-
-```
-/actuator/health
-```
-
-Info Endpoint
-
-```
-/actuator/info
-```
-
----
-
-## Database
-
-MySQL
-
-Configure credentials inside
-
-```
-application.properties
-```
-
----
-
-## Build
-
-```bash
-./mvnw clean install
-```
-
-Run
-
-```bash
-./mvnw spring-boot:run
-```
-
----
-
-## Testing
-
-Run all tests
-
-```bash
-./mvnw test
-```
-
----
 
 ## Author
 
-Sai Kumar
-
-Spring Boot Backend Project
+Sai Kumar Masabattula
